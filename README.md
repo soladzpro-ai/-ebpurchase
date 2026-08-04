@@ -1,6 +1,6 @@
 # Chuột shop Wallet Shop — Cloudflare Pages
 
-Chuột shop is a full-stack JavaScript app for Cloudflare Pages:
+Chuột shop is a full-stack JavaScript app for Cloudflare Pages and worker:
 
 - Frontend: plain HTML, CSS and browser JavaScript in `public/`
 - Backend: Cloudflare Pages Functions in `functions/`
@@ -38,17 +38,27 @@ The test starts Wrangler, checks the static page, `/api/config`, and the unauthe
 
 ## Deploy to Cloudflare Pages
 
-You can deploy with Wrangler:
+### Option 1: Deploy via Wrangler CLI
 
 ```powershell
 npm.cmd run deploy
 ```
 
-Or connect this repository in Workers & Pages with:
+This runs `wrangler pages deploy public` — the correct command for **Pages** projects.
 
-- Build command: `exit 0`
-- Build output directory: `public`
-- Functions directory: `functions/`
+> ⚠️ **Important:** Do NOT use `npx wrangler deploy` — that command is for **Workers**, not Pages. This project is a Pages project (it has `pages_build_output_dir` in `wrangler.toml` and uses `functions/` for Pages Functions).
+
+### Option 2: Connect repository in Cloudflare Pages dashboard
+
+When connecting this repository in **Workers & Pages** → **Create application** → **Pages** → **Connect to Git**, configure:
+
+- **Framework preset:** None
+- **Build command:** `npm run build`
+- **Build output directory:** `public`
+- **Root directory:** (leave empty)
+- **Environment variables:** Add the same names as in `.dev.vars` (see below)
+
+> ⚠️ **Do NOT set the deploy command to `npx wrangler deploy`.** Cloudflare Pages automatically builds and deploys the `public/` directory. The `build` script (`exit 0`) simply confirms the build step succeeds.
 
 `wrangler.toml` is already configured with `pages_build_output_dir = "./public"`.
 

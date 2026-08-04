@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "node scripts/run-wrangler.mjs pages dev public",
+    "build": "exit 0",
     "deploy": "node scripts/run-wrangler.mjs pages deploy public",
+    "deploy:cf": "npx wrangler pages deploy public --project-name chuot-shop-wallet",
     "check": "node --check src/lumen.js",
     "test:local": "node scripts/smoke-pages.mjs"
   },
