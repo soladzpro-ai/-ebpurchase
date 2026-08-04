@@ -1,0 +1,11 @@
+{
+    "schema_version": 2,
+    "commit": "",
+    "indexed_at": "2026-08-04T11:51:03Z",
+    "project": "purchase-platform",
+    "nodes": 270,
+    "edges": 418,
+    "original_size": 1900544,
+    "compressed_size": 59274,
+    "compression_level": 3
+}

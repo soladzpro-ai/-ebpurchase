@@ -1,0 +1,19 @@
+{
+  "name": "chuot-shop-wallet",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chuột shop wallet and digital goods shop with Google OAuth, Sanity and Pay2S.",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/run-wrangler.mjs pages dev public",
+    "deploy": "node scripts/run-wrangler.mjs pages deploy public",
+    "check": "node --check src/lumen.js",
+    "test:local": "node scripts/smoke-pages.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "wrangler": "4.118.0"
+  }
+}
