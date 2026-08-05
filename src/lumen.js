@@ -1,45 +1,23 @@
-﻿const CORE_PRODUCTS = [
-  {
-    id: 'focus-pack',
-    name: 'Gói Tập trung',
-    eyebrow: 'NĂNG SUẤT',
-    description: 'Bộ công cụ lập kế hoạch tuần gọn gàng để làm việc bình tĩnh và sắc bén hơn.',
-    price: 89000,
-    tag: 'Phổ biến',
-    visual: '01',
-    tone: 'warm'
-  },
-  {
-    id: 'signal-pack',
-    name: 'Gói Tín hiệu',
-    eyebrow: 'SÁNG TẠO',
-    description: 'Bộ khởi đầu trực quan giúp ý tưởng của bạn trở nên rõ ràng và thuyết phục.',
-    price: 149000,
-    tag: 'Mới',
-    visual: '02',
-    tone: 'blue'
-  },
-  {
-    id: 'studio-pack',
-    name: 'Gói Studio',
-    eyebrow: 'HỆ THỐNG',
-    description: 'Bộ công cụ gọn nhẹ giúp biến ý tưởng thô thành hệ thống hoàn chỉnh.',
-    price: 249000,
-    tag: 'Đáng giá nhất',
-    visual: '03',
-    tone: 'green'
-  },
-  {
-    id: 'archive-pack',
-    name: 'Gói Lưu trữ',
-    eyebrow: 'THAM KHẢO',
-    description: 'Thư viện chọn lọc gồm prompt, mẫu quy trình và checklist.',
-    price: 319000,
-    tag: 'Có giới hạn',
-    visual: '04',
-    tone: 'purple'
-  }
+﻿const RECHARGE_AMOUNTS = [10000, 20000, 50000, 100000, 200000, 500000];
+
+const RECHARGE_CARRIERS = [
+  { slug: 'viettel', label: 'Viettel', tone: 'red', eyebrow: 'VIETTEL' },
+  { slug: 'vina', label: 'VinaPhone', tone: 'blue', eyebrow: 'VINAPHONE' },
+  { slug: 'mobi', label: 'MobiFone', tone: 'purple', eyebrow: 'MOBIFONE' }
 ];
+
+const CORE_PRODUCTS = RECHARGE_CARRIERS.flatMap((carrier, ci) =>
+  RECHARGE_AMOUNTS.map((amount, ai) => ({
+    id: `nap-the-${carrier.slug}-${amount}`,
+    name: `Nạp thẻ ${carrier.label} ${String(amount / 1000)}k`,
+    eyebrow: carrier.eyebrow,
+    description: `Thẻ cào điện thoại ${carrier.label} mệnh giá ${amount.toLocaleString('vi-VN')}đ. Giao ngay sau khi thanh toán.`,
+    price: amount,
+    tag: ai === 2 ? 'Phổ biến' : ai === 4 ? 'Đáng giá' : '',
+    visual: String(ci * 6 + ai + 1).padStart(2, '0'),
+    tone: carrier.tone
+  }))
+)
 
 const ADDITIONAL_PACK_THEMES = [
   { slug: 'tap-trung', label: 'Tập trung', eyebrow: 'NĂNG SUẤT', tone: 'warm', tag: 'Phổ biến', description: 'Bộ công cụ giúp sắp xếp công việc và giữ nhịp làm việc rõ ràng.' },
@@ -48,7 +26,7 @@ const ADDITIONAL_PACK_THEMES = [
   { slug: 'luu-tru', label: 'Lưu trữ', eyebrow: 'THAM KHẢO', tone: 'purple', tag: 'Giới hạn', description: 'Thư viện chọn lọc giúp tra cứu nhanh và xây dựng nền tảng lâu dài.' }
 ];
 
-const ADDITIONAL_PRODUCTS = Array.from({ length: 96 }, (_, index) => {
+const ADDITIONAL_PRODUCTS = Array.from({ length: 82 }, (_, index) => {
   const theme = ADDITIONAL_PACK_THEMES[index % ADDITIONAL_PACK_THEMES.length];
   const edition = Math.floor(index / ADDITIONAL_PACK_THEMES.length) + 1;
   const sequence = index + CORE_PRODUCTS.length + 1;
