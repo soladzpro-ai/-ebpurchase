@@ -352,10 +352,10 @@ export async function settlePay2sPayload(bindings, payload) {
     const paidAt = now();
     await sanityMutate(bindings, [
       { patch: { id: deposit._id, set: { status: 'paid', paidAt, providerData: transaction } } },
-      { patch: { id: userDocumentId(deposit.userId), inc: { balance: amount }, set: { updatedAt: paidAt } } },
-      { createIfNotExists: { _id: ledgerId, _type: 'lumenTransaction', userId: deposit.userId, kind: 'deposit', amount, currency: currency(bindings), description: 'Nạp tiền qua Pay2S', orderId, provider: 'pay2s', createdAt: paidAt } }
+      { patch: { id: userDocumentId(deposit.userId), inc: { balance: Number(deposit.amount) }, set: { updatedAt: paidAt } } },
+      { createIfNotExists: { _id: ledgerId, _type: 'lumenTransaction', userId: deposit.userId, kind: 'deposit', amount: Number(deposit.amount), currency: currency(bindings), description: 'Nạp tiền qua Pay2S', orderId, provider: 'pay2s', createdAt: paidAt } }
     ]);
-    settled.push({ orderId, amount });
+    settled.push({ orderId, amount: Number(deposit.amount) });
   }
   return settled;
 }
