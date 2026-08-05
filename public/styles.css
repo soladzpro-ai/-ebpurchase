@@ -17,7 +17,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Fira Sans", system-ui, sans-serif; font-size: 15px; line-height: 1.5; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: Calibri, "Segoe UI", system-ui, sans-serif; font-size: 15px; line-height: 1.5; }
 button, input { font: inherit; }
 button, a { -webkit-tap-highlight-color: transparent; }
 button { border: 0; cursor: pointer; }
@@ -32,7 +32,7 @@ a { color: inherit; text-decoration: none; }
 .brand-mark span:nth-child(1) { height: 10px; opacity: .68; }
 .brand-mark span:nth-child(2) { height: 17px; }
 .brand-mark span:nth-child(3) { height: 13px; opacity: .82; }
-.eyebrow { color: var(--muted); text-transform: uppercase; letter-spacing: .13em; font: 500 10px/1.2 "Fira Code", monospace; margin: 0; }
+.eyebrow { color: var(--muted); text-transform: uppercase; letter-spacing: .13em; font: 500 10px/1.2 Calibri, "Segoe UI", monospace; margin: 0; }
 .on-dark { color: #a2a59a; }
 .sidebar-label { padding: 0 12px; color: #777a70; margin-bottom: 11px; }
 .nav-list { display: grid; gap: 4px; }
@@ -41,7 +41,7 @@ a { color: inherit; text-decoration: none; }
 .nav-item.active { background: #292b26; color: #fff; }
 .nav-icon, [data-icon] { width: 17px; height: 17px; display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; }
 .nav-icon svg, [data-icon] svg { width: 100%; height: 100%; display: block; }
-.nav-count { margin-left: auto; min-width: 21px; height: 21px; border-radius: 8px; display: grid; place-items: center; color: var(--gold); background: #3b3628; font: 500 10px "Fira Code", monospace; }
+.nav-count { margin-left: auto; min-width: 21px; height: 21px; border-radius: 8px; display: grid; place-items: center; color: var(--gold); background: #3b3628; font: 500 10px Calibri, "Segoe UI", monospace; }
 .sidebar-footer { margin-top: auto; }
 .secure-note { display: flex; align-items: center; gap: 10px; padding: 15px 12px; border-top: 1px solid #292b27; border-bottom: 1px solid #292b27; color: #c9cbc4; }
 .secure-note strong, .secure-note small, .profile-copy strong, .profile-copy small { display: block; }
@@ -63,13 +63,13 @@ a { color: inherit; text-decoration: none; }
 .slash { color: #b1b3aa; }
 .topbar-actions { display: flex; align-items: center; gap: 17px; }
 .topbar-balance { min-width: 116px; display: flex; flex-direction: column; gap: 2px; padding: 7px 12px 8px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); box-shadow: 0 7px 18px rgba(20, 21, 18, .045); }
-.topbar-balance-label { color: var(--muted); text-transform: uppercase; letter-spacing: .11em; font: 500 9px/1.2 "Fira Code", monospace; }
-.topbar-balance strong { color: var(--ink); font: 600 14px/1.2 "Fira Code", monospace; letter-spacing: -.045em; white-space: nowrap; }
+.topbar-balance-label { color: var(--muted); text-transform: uppercase; letter-spacing: .11em; font: 500 9px/1.2 Calibri, "Segoe UI", monospace; }
+.topbar-balance strong { color: var(--ink); font: 600 14px/1.2 Calibri, "Segoe UI", monospace; letter-spacing: -.045em; white-space: nowrap; }
 .icon-button { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: transparent; color: var(--ink); position: relative; transition: background .2s ease, color .2s ease; }
 .icon-button:hover { background: #e9e9e2; }
 .icon-button > [data-icon] { width: 17px; height: 17px; }
 .notification-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--gold-deep); position: absolute; top: 6px; right: 7px; }
-.avatar { display: grid; place-items: center; border-radius: 50%; color: var(--ink); background: #e6c575; font: 500 12px "Fira Code", monospace; }
+.avatar { display: grid; place-items: center; border-radius: 50%; color: var(--ink); background: #e6c575; font: 500 12px Calibri, "Segoe UI", monospace; }
 .avatar-small { width: 30px; height: 30px; font-size: 10px; }
 .avatar-button { width: 31px; height: 31px; }
 .avatar-tiny { width: 24px; height: 24px; font-size: 9px; }
@@ -81,7 +81,7 @@ h1 { max-width: 630px; margin: 13px 0 9px; font-size: clamp(32px, 4vw, 52px); li
 h2 { margin: 8px 0 0; font-size: 21px; line-height: 1.15; letter-spacing: -.04em; font-weight: 600; }
 .intro-copy { color: var(--muted); margin: 0; font-size: 15px; }
 .auth-actions { display: flex; align-items: center; gap: 17px; padding-bottom: 3px; }
-.connection-status { display: inline-flex; gap: 8px; align-items: center; white-space: nowrap; color: var(--muted); font: 500 11px "Fira Code", monospace; }
+.connection-status { display: inline-flex; gap: 8px; align-items: center; white-space: nowrap; color: var(--muted); font: 500 11px Calibri, "Segoe UI", monospace; }
 .button { min-height: 42px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 0 17px; border-radius: 9px; font-size: 13px; font-weight: 600; transition: transform .2s ease, background .2s ease, box-shadow .2s ease; }
 .button:hover { transform: translateY(-1px); }
 .button:focus-visible, .text-button:focus-visible, .fund-card:focus-visible, .nav-item:focus-visible, .icon-button:focus-visible, input:focus-visible { outline: 3px solid rgba(155, 108, 23, .35); outline-offset: 3px; }
@@ -100,12 +100,12 @@ h2 { margin: 8px 0 0; font-size: 21px; line-height: 1.15; letter-spacing: -.04em
 .text-button:hover { color: var(--gold-deep); }
 .text-button [data-icon] { width: 13px; height: 13px; }
 .text-button.subtle { color: var(--muted); font-weight: 500; }
-.section-meta { color: var(--muted); font: 11px "Fira Code", monospace; }
+.section-meta { color: var(--muted); font: 11px Calibri, "Segoe UI", monospace; }
 .funds-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 .fund-card { min-height: 96px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; padding: 18px; border: 1px solid var(--line); background: var(--surface); border-radius: 13px; text-align: left; transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
 .fund-card:hover { border-color: #cfcfc4; box-shadow: 0 12px 24px rgba(20, 21, 18, .06); transform: translateY(-2px); }
 .fund-card.featured { background: #f2ead7; border-color: #e4d09e; }
-.fund-number { align-self: start; color: #a7a9a0; font: 11px "Fira Code", monospace; }
+.fund-number { align-self: start; color: #a7a9a0; font: 11px Calibri, "Segoe UI", monospace; }
 .fund-card strong, .fund-card small { display: block; }
 .fund-card strong { font-size: 20px; letter-spacing: -.05em; font-weight: 600; }
 .fund-card small { margin-top: 3px; color: var(--muted); font-size: 11px; }
@@ -120,14 +120,14 @@ h2 { margin: 8px 0 0; font-size: 21px; line-height: 1.15; letter-spacing: -.04em
 .product-visual.blue { background: #bdd5da; }
 .product-visual.green { background: #c6d6ba; }
 .product-visual.purple { background: #d2c9df; }
-.product-number { position: relative; z-index: 1; color: rgba(16, 17, 15, .57); font: 11px "Fira Code", monospace; }
-.product-tag { position: absolute; z-index: 1; right: 13px; bottom: 12px; padding: 5px 7px; border-radius: 4px; background: rgba(255,255,255,.44); color: var(--ink); font: 10px "Fira Code", monospace; }
+.product-number { position: relative; z-index: 1; color: rgba(16, 17, 15, .57); font: 11px Calibri, "Segoe UI", monospace; }
+.product-tag { position: absolute; z-index: 1; right: 13px; bottom: 12px; padding: 5px 7px; border-radius: 4px; background: rgba(255,255,255,.44); color: var(--ink); font: 10px Calibri, "Segoe UI", monospace; }
 .product-content { padding: 17px 16px 15px; }
 .product-content .eyebrow { color: #999b91; font-size: 9px; }
 .product-content h3 { margin: 8px 0 6px; font-size: 17px; letter-spacing: -.045em; }
 .product-description { min-height: 42px; color: var(--muted); font-size: 12px; line-height: 1.45; margin-bottom: 18px; }
 .product-bottom { display: flex; align-items: center; justify-content: space-between; gap: 9px; border-top: 1px solid var(--line); padding-top: 13px; }
-.product-price { font: 600 13px "Fira Code", monospace; letter-spacing: -.06em; white-space: nowrap; }
+.product-price { font: 600 13px Calibri, "Segoe UI", monospace; letter-spacing: -.06em; white-space: nowrap; }
 .buy-button { display: inline-flex; align-items: center; gap: 5px; background: var(--ink); color: white; border-radius: 6px; padding: 8px 9px; font-size: 11px; font-weight: 600; transition: background .2s ease; }
 .buy-button:hover { background: var(--gold-deep); }
 .buy-button [data-icon] { width: 12px; height: 12px; }
@@ -148,12 +148,12 @@ h2 { margin: 8px 0 0; font-size: 21px; line-height: 1.15; letter-spacing: -.04em
 .deposit-icon svg { width: 14px; height: 14px; }
 .deposit-copy strong, .deposit-copy small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .deposit-copy strong { font-size: 12px; font-weight: 600; }
-.deposit-copy small { margin-top: 4px; color: var(--muted); font: 10px "Fira Code", monospace; }
-.deposit-status { font: 10px "Fira Code", monospace; color: var(--success); }
+.deposit-copy small { margin-top: 4px; color: var(--muted); font: 10px Calibri, "Segoe UI", monospace; }
+.deposit-status { font: 10px Calibri, "Segoe UI", monospace; color: var(--success); }
 .deposit-status.pending { color: var(--gold-deep); }
 .deposit-status.failed { color: #a64b42; }
 .activity-copy small { color: var(--muted); font-size: 11px; margin-top: 2px; }
-.activity-amount { text-align: right; font: 500 12px "Fira Code", monospace; }
+.activity-amount { text-align: right; font: 500 12px Calibri, "Segoe UI", monospace; }
 .activity-amount.positive { color: var(--success); }
 .activity-amount.negative { color: var(--ink); }
 .empty-state { padding: 32px 0 20px; color: var(--muted); font-size: 12px; border-top: 1px solid var(--line); }
@@ -166,7 +166,7 @@ h2 { margin: 8px 0 0; font-size: 21px; line-height: 1.15; letter-spacing: -.04em
 .note-author strong, .note-author small { display: block; }
 .note-author strong { font-size: 12px; font-weight: 600; }
 .note-author small { color: var(--muted); font-size: 11px; margin-top: 2px; }
-.footer { display: flex; justify-content: space-between; align-items: center; color: #a2a49b; font: 10px "Fira Code", monospace; padding: 50px 0 0; }
+.footer { display: flex; justify-content: space-between; align-items: center; color: #a2a49b; font: 10px Calibri, "Segoe UI", monospace; padding: 50px 0 0; }
 .footer-links { display: flex; gap: 18px; }
 .footer a:hover { color: var(--ink); }
 .mobile-nav { display: none; }
@@ -179,22 +179,22 @@ h2 { margin: 8px 0 0; font-size: 21px; line-height: 1.15; letter-spacing: -.04em
 .modal h2 { max-width: 280px; font-size: 27px; margin-top: 12px; }
 .modal-copy { color: var(--muted); font-size: 13px; line-height: 1.55; margin: 11px 0 25px; }
 .modal label { display: flex; justify-content: space-between; color: var(--ink); font-size: 12px; font-weight: 600; margin-bottom: 7px; }
-.modal label span, .input-suffix { color: var(--muted); font: 10px "Fira Code", monospace; }
+.modal label span, .input-suffix { color: var(--muted); font: 10px Calibri, "Segoe UI", monospace; }
 .amount-input { display: flex; align-items: center; gap: 9px; height: 53px; border: 1px solid #cfd0c7; border-radius: 9px; padding: 0 14px; transition: border .2s ease, box-shadow .2s ease; }
 .amount-input:focus-within { border-color: var(--gold-deep); box-shadow: 0 0 0 3px rgba(155, 108, 23, .12); }
 .amount-input > span:first-child { color: var(--gold-deep); font-size: 18px; }
-.amount-input input { min-width: 0; flex: 1; border: 0; outline: 0; background: transparent; color: var(--ink); font: 500 20px "Fira Code", monospace; letter-spacing: -.05em; }
+.amount-input input { min-width: 0; flex: 1; border: 0; outline: 0; background: transparent; color: var(--ink); font: 500 20px Calibri, "Segoe UI", monospace; letter-spacing: -.05em; }
 .amount-input input::placeholder { color: #b6b8af; }
 .quick-amounts { display: flex; gap: 7px; margin: 11px 0 22px; }
-.quick-amounts button { border: 1px solid var(--line); background: var(--paper); color: var(--muted); padding: 7px 10px; border-radius: 6px; font: 10px "Fira Code", monospace; transition: border .2s ease, color .2s ease; }
+.quick-amounts button { border: 1px solid var(--line); background: var(--paper); color: var(--muted); padding: 7px 10px; border-radius: 6px; font: 10px Calibri, "Segoe UI", monospace; transition: border .2s ease, color .2s ease; }
 .quick-amounts button:hover { color: var(--ink); border-color: #bcbdb4; }
-.form-hint { display: flex; justify-content: center; align-items: center; gap: 7px; color: #999b91; font: 10px "Fira Code", monospace; margin: 14px 0 0; }
+.form-hint { display: flex; justify-content: center; align-items: center; gap: 7px; color: #999b91; font: 10px Calibri, "Segoe UI", monospace; margin: 14px 0 0; }
 .form-hint [data-icon] { width: 13px; height: 13px; }
 .qr-modal { text-align: center; }
 .qr-modal h2 { margin-left: auto; margin-right: auto; }
 .qr-frame { display: grid; place-items: center; width: 230px; height: 230px; padding: 15px; margin: 0 auto 17px; border: 1px solid var(--line); border-radius: 12px; background: white; }
 .qr-frame img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.order-ref { color: var(--muted); font: 10px "Fira Code", monospace; margin-bottom: 18px; }
+.order-ref { color: var(--muted); font: 10px Calibri, "Segoe UI", monospace; margin-bottom: 18px; }
 .toast-region { position: fixed; z-index: 50; right: 22px; bottom: 22px; display: grid; gap: 9px; width: min(360px, calc(100vw - 44px)); }
 .toast { padding: 13px 15px; border: 1px solid var(--line); border-left: 3px solid var(--gold-deep); border-radius: 9px; background: var(--surface); box-shadow: var(--shadow); color: var(--ink); font-size: 12px; animation: toast-in .25s ease both; }
 .toast.error { border-left-color: var(--error); }
