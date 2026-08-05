@@ -44,7 +44,7 @@ const UI_TRANSLATIONS = new Map([
   ['Your payment opens securely with Pay2S. Your Chuột shop balance updates only after the payment notification is verified.', 'Thanh toán sẽ mở an toàn qua Pay2S. Số dư Chuột shop chỉ cập nhật sau khi xác minh thông báo thanh toán.'],
   ['Amount', 'Số tiền'], ['Continue to Pay2S', 'Tiếp tục đến Pay2S'], ['Secure handoff · no card details stored here', 'Kết nối an toàn · không lưu thông tin thẻ tại đây'],
   ['Payment ready', 'Thanh toán đã sẵn sàng'], ['Scan to add funds', 'Quét để nạp tiền'], ['Open your banking app and scan this code.', 'Mở ứng dụng ngân hàng và quét mã này.'],
-  ["I'll check my balance", 'Tôi đã kiểm tra số dư'], ['Wallet / Add funds', 'Ví web / Nạp tiền'], ['Top up your web balance.', 'Nạp thêm vào số dư web.'],
+  ["I'll check my balance", 'Tôi đã kiểm tra số dư'], ['I'll check my balance', 'Tôi đã kiểm tra số dư'], ['Wallet / Add funds', 'Ví web / Nạp tiền'], ['Top up your web balance.', 'Nạp thêm vào số dư web.'],
   ['Choose a package and complete the secure Pay2S handoff.', 'Chọn một mệnh giá và hoàn tất thanh toán an toàn qua Pay2S.'],
   ['Move money in', 'Nạp tiền vào'], ['Custom amount', 'Số tiền tùy chọn'], ['Quick test', 'Dùng thử nhanh'], ['Small start', 'Bắt đầu nhỏ'],
   ['Quick top-up', 'Nạp nhanh'], ['Everyday add', 'Nạp hằng ngày'], ['Light start', 'Khởi đầu nhẹ'], ['Most selected', 'Được chọn nhiều nhất'],
