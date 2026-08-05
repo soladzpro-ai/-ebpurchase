@@ -373,7 +373,7 @@ export async function checkout(bindings, session, productId) {
   await sanityMutate(bindings, [
     { patch: { id: userId, dec: { balance: product.price }, set: { updatedAt: createdAt } } },
     { create: { _id: `lumen-purchase-${purchaseId}`, _type: 'lumenPurchase', userId: session.googleId, productId: product.id, productName: product.name, amount: product.price, currency: currency(bindings), purchaseId, createdAt } },
-    { create: { _id: `lumen-ledger-${purchaseId}`, _type: 'lumenTransaction', userId: session.googleId, kind: 'purchase', amount: -product.price, currency: currency(bindings), description: `Đã mua ${product.name}`, purchaseId, createdAt } }
+    { create: { _id: `lumen-ledger-${purchaseId}`, _type: 'lumenTransaction', userId: session.googleId, kind: 'purchase', amount: -product.price, currency: currency(bindings), description: `Đã mua ${product.name}`, purchaseId, createdAt, userId: userId } }
   ]);
   return { purchaseId, product, balance: Number(user.balance) - product.price };
 }
