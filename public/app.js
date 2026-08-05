@@ -1,4 +1,4 @@
-const state = {
+﻿const state = {
   config: { currency: 'VND', products: [] },
   user: null,
   dashboard: { balance: 0, transactions: [], deposits: [], purchases: [], storageConfigured: false }
@@ -29,37 +29,37 @@ const $$ = (selector) => [...document.querySelectorAll(selector)];
 const on = (selector, event, handler) => $(selector)?.addEventListener(event, handler);
 
 const UI_TRANSLATIONS = new Map([
-  ['Workspace', 'Khu vực làm việc'], ['Home', 'Trang chủ'], ['Add funds', 'Nạp tiền'], ['Shop', 'Cửa hàng'],
-  ['Transactions', 'Giao dịch'], ['Deposits', 'Lịch sử nạp'], ['Protected balance', 'Số dư được bảo vệ'],
-  ['Encrypted at rest', 'Mã hóa khi lưu trữ'], ['Guest mode', 'Chế độ khách'], ['Sign in to activate', 'Đăng nhập để kích hoạt'],
-  ['Web balance', 'Số dư web'], ['Balance', 'Số dư'], ['Account menu', 'Menu tài khoản'], ['Open menu', 'Mở menu'],
-  ['Notifications', 'Thông báo'], ['Overview', 'Tổng quan'], ['Tuesday · 04 August 2026', 'Thứ Ba · 04 tháng 08, 2026'],
-  ['Your wallet, in one place.', 'Ví web của bạn, ở một nơi.'], ['A considered balance for the things worth bringing home.', 'Quản lý số dư để mua những món đồ bạn yêu thích.'],
-  ['Preview mode', 'Chế độ xem thử'], ['Continue with Google', 'Tiếp tục với Google'], ['Spend thoughtfully', 'Mua sắm có chủ đích'],
-  ['Shop the collection', 'Khám phá sản phẩm'], ['4 packages · digital delivery', '4 gói · giao hàng kỹ thuật số'], ['packages · digital delivery', 'gói · giao hàng kỹ thuật số'],
-  ['Your ledger', 'Sổ giao dịch'], ['Transaction history', 'Lịch sử giao dịch'], ['View all', 'Xem tất cả'],
-  ['Pay2S records', 'Lịch sử Pay2S'], ['Deposit history', 'Lịch sử nạp tiền'], ['Last 8 deposits', '8 lần nạp gần nhất'],
-  ['Security', 'Bảo mật'], ['Terms', 'Điều khoản'], ['Support', 'Hỗ trợ'], ['Fund', 'Nạp tiền'], ['History', 'Giao dịch'],
-  ['Pay2S transfer', 'Chuyển tiền Pay2S'], ['How much do you want to add?', 'Bạn muốn nạp bao nhiêu?'],
-  ['Your payment opens securely with Pay2S. Your Chuột shop balance updates only after the payment notification is verified.', 'Thanh toán sẽ mở an toàn qua Pay2S. Số dư Chuột shop chỉ cập nhật sau khi xác minh thông báo thanh toán.'],
-  ['Amount', 'Số tiền'], ['Continue to Pay2S', 'Tiếp tục đến Pay2S'], ['Secure handoff · no card details stored here', 'Kết nối an toàn · không lưu thông tin thẻ tại đây'],
-  ['Payment ready', 'Thanh toán đã sẵn sàng'], ['Scan to add funds', 'Quét để nạp tiền'], ['Open your banking app and scan this code.', 'Mở ứng dụng ngân hàng và quét mã này.'],
-  ["I'll check my balance", 'Tôi đã kiểm tra số dư'], ['I’ll check my balance', 'Tôi đã kiểm tra số dư'], ['Wallet / Add funds', 'Ví web / Nạp tiền'], ['Top up your web balance.', 'Nạp thêm vào số dư web.'],
-  ['Choose a package and complete the secure Pay2S handoff.', 'Chọn một mệnh giá và hoàn tất thanh toán an toàn qua Pay2S.'],
-  ['Move money in', 'Nạp tiền vào'], ['Custom amount', 'Số tiền tùy chọn'], ['Quick test', 'Dùng thử nhanh'], ['Small start', 'Bắt đầu nhỏ'],
-  ['Quick top-up', 'Nạp nhanh'], ['Everyday add', 'Nạp hằng ngày'], ['Light start', 'Khởi đầu nhẹ'], ['Most selected', 'Được chọn nhiều nhất'],
-  ['Build your balance', 'Tăng số dư'], ['More room to shop', 'Mua sắm thoải mái hơn'], ['Settle in', 'Nạp dùng dài hạn'],
-  ['Wallet / Transactions', 'Ví web / Giao dịch'], ['Transaction history.', 'Lịch sử giao dịch.'],
-  ['A clear record of deposits and purchases made with your web balance.', 'Theo dõi rõ ràng các lần nạp và mua bằng số dư web.'],
-  ['All transactions', 'Tất cả giao dịch'], ['Sanity ledger', 'Sổ lưu trên Sanity'], ['Wallet / Deposits', 'Ví web / Nạp tiền'],
-  ['Deposit history.', 'Lịch sử nạp tiền.'], ['Track every Pay2S top-up and its confirmation status.', 'Theo dõi từng lần nạp Pay2S và trạng thái xác nhận.'],
-  ['All deposits', 'Tất cả lần nạp'], ['Add funds', 'Nạp tiền']
+  ['Workspace', 'Khu vá»±c lÃ m viá»‡c'], ['Home', 'Trang chá»§'], ['Add funds', 'Náº¡p tiá»n'], ['Shop', 'Cá»­a hÃ ng'],
+  ['Transactions', 'Giao dá»‹ch'], ['Deposits', 'Lá»‹ch sá»­ náº¡p'], ['Protected balance', 'Sá»‘ dÆ° Ä‘Æ°á»£c báº£o vá»‡'],
+  ['Encrypted at rest', 'MÃ£ hÃ³a khi lÆ°u trá»¯'], ['Guest mode', 'Cháº¿ Ä‘á»™ khÃ¡ch'], ['Sign in to activate', 'ÄÄƒng nháº­p Ä‘á»ƒ kÃ­ch hoáº¡t'],
+  ['Web balance', 'Sá»‘ dÆ° web'], ['Balance', 'Sá»‘ dÆ°'], ['Account menu', 'Menu tÃ i khoáº£n'], ['Open menu', 'Má»Ÿ menu'],
+  ['Notifications', 'ThÃ´ng bÃ¡o'], ['Overview', 'Tá»•ng quan'], ['Tuesday Â· 04 August 2026', 'Thá»© Ba Â· 04 thÃ¡ng 08, 2026'],
+  ['Your wallet, in one place.', 'VÃ­ web cá»§a báº¡n, á»Ÿ má»™t nÆ¡i.'], ['A considered balance for the things worth bringing home.', 'Quáº£n lÃ½ sá»‘ dÆ° Ä‘á»ƒ mua nhá»¯ng mÃ³n Ä‘á»“ báº¡n yÃªu thÃ­ch.'],
+  ['Preview mode', 'Cháº¿ Ä‘á»™ xem thá»­'], ['Continue with Google', 'Tiáº¿p tá»¥c vá»›i Google'], ['Spend thoughtfully', 'Mua sáº¯m cÃ³ chá»§ Ä‘Ã­ch'],
+  ['Shop the collection', 'KhÃ¡m phÃ¡ sáº£n pháº©m'], ['4 packages Â· digital delivery', '4 gÃ³i Â· giao hÃ ng ká»¹ thuáº­t sá»‘'], ['packages Â· digital delivery', 'gÃ³i Â· giao hÃ ng ká»¹ thuáº­t sá»‘'],
+  ['Your ledger', 'Sá»• giao dá»‹ch'], ['Transaction history', 'Lá»‹ch sá»­ giao dá»‹ch'], ['View all', 'Xem táº¥t cáº£'],
+  ['Pay2S records', 'Lá»‹ch sá»­ Pay2S'], ['Deposit history', 'Lá»‹ch sá»­ náº¡p tiá»n'], ['Last 8 deposits', '8 láº§n náº¡p gáº§n nháº¥t'],
+  ['Security', 'Báº£o máº­t'], ['Terms', 'Äiá»u khoáº£n'], ['Support', 'Há»— trá»£'], ['Fund', 'Náº¡p tiá»n'], ['History', 'Giao dá»‹ch'],
+  ['Pay2S transfer', 'Chuyá»ƒn tiá»n Pay2S'], ['How much do you want to add?', 'Báº¡n muá»‘n náº¡p bao nhiÃªu?'],
+  ['Your payment opens securely with Pay2S. Your Chuá»™t shop balance updates only after the payment notification is verified.', 'Thanh toÃ¡n sáº½ má»Ÿ an toÃ n qua Pay2S. Sá»‘ dÆ° Chuá»™t shop chá»‰ cáº­p nháº­t sau khi xÃ¡c minh thÃ´ng bÃ¡o thanh toÃ¡n.'],
+  ['Amount', 'Sá»‘ tiá»n'], ['Continue to Pay2S', 'Tiáº¿p tá»¥c Ä‘áº¿n Pay2S'], ['Secure handoff Â· no card details stored here', 'Káº¿t ná»‘i an toÃ n Â· khÃ´ng lÆ°u thÃ´ng tin tháº» táº¡i Ä‘Ã¢y'],
+  ['Payment ready', 'Thanh toÃ¡n Ä‘Ã£ sáºµn sÃ ng'], ['Scan to add funds', 'QuÃ©t Ä‘á»ƒ náº¡p tiá»n'], ['Open your banking app and scan this code.', 'Má»Ÿ á»©ng dá»¥ng ngÃ¢n hÃ ng vÃ  quÃ©t mÃ£ nÃ y.'],
+  ["I'll check my balance", 'TÃ´i Ä‘Ã£ kiá»ƒm tra sá»‘ dÆ°'], ['Iâ€™ll check my balance', 'TÃ´i Ä‘Ã£ kiá»ƒm tra sá»‘ dÆ°'], ['Wallet / Add funds', 'VÃ­ web / Náº¡p tiá»n'], ['Top up your web balance.', 'Náº¡p thÃªm vÃ o sá»‘ dÆ° web.'],
+  ['Choose a package and complete the secure Pay2S handoff.', 'Chá»n má»™t má»‡nh giÃ¡ vÃ  hoÃ n táº¥t thanh toÃ¡n an toÃ n qua Pay2S.'],
+  ['Move money in', 'Náº¡p tiá»n vÃ o'], ['Custom amount', 'Sá»‘ tiá»n tÃ¹y chá»n'], ['Quick test', 'DÃ¹ng thá»­ nhanh'], ['Small start', 'Báº¯t Ä‘áº§u nhá»'],
+  ['Quick top-up', 'Náº¡p nhanh'], ['Everyday add', 'Náº¡p háº±ng ngÃ y'], ['Light start', 'Khá»Ÿi Ä‘áº§u nháº¹'], ['Most selected', 'ÄÆ°á»£c chá»n nhiá»u nháº¥t'],
+  ['Build your balance', 'TÄƒng sá»‘ dÆ°'], ['More room to shop', 'Mua sáº¯m thoáº£i mÃ¡i hÆ¡n'], ['Settle in', 'Náº¡p dÃ¹ng dÃ i háº¡n'],
+  ['Wallet / Transactions', 'VÃ­ web / Giao dá»‹ch'], ['Transaction history.', 'Lá»‹ch sá»­ giao dá»‹ch.'],
+  ['A clear record of deposits and purchases made with your web balance.', 'Theo dÃµi rÃµ rÃ ng cÃ¡c láº§n náº¡p vÃ  mua báº±ng sá»‘ dÆ° web.'],
+  ['All transactions', 'Táº¥t cáº£ giao dá»‹ch'], ['Sanity ledger', 'Sá»• lÆ°u trÃªn Sanity'], ['Wallet / Deposits', 'VÃ­ web / Náº¡p tiá»n'],
+  ['Deposit history.', 'Lá»‹ch sá»­ náº¡p tiá»n.'], ['Track every Pay2S top-up and its confirmation status.', 'Theo dÃµi tá»«ng láº§n náº¡p Pay2S vÃ  tráº¡ng thÃ¡i xÃ¡c nháº­n.'],
+  ['All deposits', 'Táº¥t cáº£ láº§n náº¡p'], ['Add funds', 'Náº¡p tiá»n']
 ]);
 
 const ATTRIBUTE_TRANSLATIONS = new Map([
-  ['Primary navigation', 'Điều hướng chính'], ['Chuột shop home', 'Trang chủ Chuột shop'], ['Notifications', 'Thông báo'],
-  ['Web balance', 'Số dư web'], ['Account menu', 'Menu tài khoản'], ['Open menu', 'Mở menu'], ['Close', 'Đóng'],
-  ['Pay2S payment QR code', 'Mã QR thanh toán Pay2S']
+  ['Primary navigation', 'Äiá»u hÆ°á»›ng chÃ­nh'], ['Chuá»™t shop home', 'Trang chá»§ Chuá»™t shop'], ['Notifications', 'ThÃ´ng bÃ¡o'],
+  ['Web balance', 'Sá»‘ dÆ° web'], ['Account menu', 'Menu tÃ i khoáº£n'], ['Open menu', 'Má»Ÿ menu'], ['Close', 'ÄÃ³ng'],
+  ['Pay2S payment QR code', 'MÃ£ QR thanh toÃ¡n Pay2S']
 ]);
 
 function translateStaticContent() {
@@ -92,34 +92,34 @@ function formatVnd(value) {
 
 function translateLedgerText(value) {
   const text = String(value || '');
-  if (text === 'Pay2S wallet deposit') return 'Nạp tiền qua Pay2S';
+  if (text === 'Pay2S wallet deposit') return 'Náº¡p tiá»n qua Pay2S';
   const purchased = text.match(/^Purchased (.+)$/);
   if (purchased) {
-    const productNames = { 'Focus Pack': 'Gói Tập trung', 'Signal Pack': 'Gói Tín hiệu', 'Studio Pack': 'Gói Studio', 'Archive Pack': 'Gói Lưu trữ' };
-    return `Đã mua ${productNames[purchased[1]] || purchased[1]}`;
+    const productNames = { 'Focus Pack': 'GÃ³i Táº­p trung', 'Signal Pack': 'GÃ³i TÃ­n hiá»‡u', 'Studio Pack': 'GÃ³i Studio', 'Archive Pack': 'GÃ³i LÆ°u trá»¯' };
+    return `ÄÃ£ mua ${productNames[purchased[1]] || purchased[1]}`;
   }
   return text;
 }
 
 function relativeDate(value) {
-  if (!value) return 'Đang chờ';
+  if (!value) return 'Äang chá»';
   const date = new Date(value);
-  if (Number.isNaN(date.getTime())) return 'Gần đây';
+  if (Number.isNaN(date.getTime())) return 'Gáº§n Ä‘Ã¢y';
   const diff = Math.max(0, Date.now() - date.getTime());
   const minutes = Math.floor(diff / 60000);
-  if (minutes < 2) return 'Vừa xong';
-  if (minutes < 60) return `${minutes} phút trước`;
+  if (minutes < 2) return 'Vá»«a xong';
+  if (minutes < 60) return `${minutes} phÃºt trÆ°á»›c`;
   const hours = Math.floor(minutes / 60);
-  if (hours < 24) return `${hours} giờ trước`;
+  if (hours < 24) return `${hours} giá» trÆ°á»›c`;
   const days = Math.floor(hours / 24);
-  return days < 7 ? `${days} ngày trước` : date.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric' });
+  return days < 7 ? `${days} ngÃ y trÆ°á»›c` : date.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric' });
 }
 
 async function api(path, options = {}) {
   const response = await fetch(path, { headers: { 'Content-Type': 'application/json', ...(options.headers || {}) }, ...options });
   const payload = await response.json().catch(() => ({}));
   if (!response.ok) {
-    const error = new Error(payload.message || payload.error || 'Đã xảy ra lỗi.');
+    const error = new Error(payload.message || payload.error || 'ÄÃ£ xáº£y ra lá»—i.');
     error.status = response.status;
     throw error;
   }
@@ -166,7 +166,7 @@ function renderProducts() {
         <p class="eyebrow">${product.eyebrow}</p>
         <h3>${product.name}</h3>
         <p class="product-description">${product.description}</p>
-        <div class="product-bottom"><span class="product-price">${formatVnd(product.price)}</span><button class="buy-button" type="button" data-buy="${product.id}">Mua gói ${icon('arrow-up-right')}</button></div>
+        <div class="product-bottom"><span class="product-price">${formatVnd(product.price)}</span><button class="buy-button" type="button" data-buy="${product.id}">Mua gÃ³i ${icon('arrow-up-right')}</button></div>
       </div>
     </article>
   `).join('');
@@ -179,17 +179,17 @@ function renderActivity() {
   if (!list) return;
   const transactions = state.dashboard.transactions || [];
   if (!state.user) {
-    list.innerHTML = '<div class="empty-state"><strong>Sổ giao dịch của bạn là riêng tư.</strong>Hãy đăng nhập để xem lịch sử nạp và mua hàng.</div>';
+    list.innerHTML = '<div class="empty-state"><strong>Sá»• giao dá»‹ch cá»§a báº¡n lÃ  riÃªng tÆ°.</strong>HÃ£y Ä‘Äƒng nháº­p Ä‘á»ƒ xem lá»‹ch sá»­ náº¡p vÃ  mua hÃ ng.</div>';
     return;
   }
   if (!transactions.length) {
-    list.innerHTML = '<div class="empty-state"><strong>Chưa có giao dịch nào.</strong>Lần nạp đầu tiên sẽ hiển thị sau khi Pay2S xác nhận.</div>';
+    list.innerHTML = '<div class="empty-state"><strong>ChÆ°a cÃ³ giao dá»‹ch nÃ o.</strong>Láº§n náº¡p Ä‘áº§u tiÃªn sáº½ hiá»ƒn thá»‹ sau khi Pay2S xÃ¡c nháº­n.</div>';
     return;
   }
   list.innerHTML = transactions.map((transaction) => {
     const positive = Number(transaction.amount) >= 0;
-    const provider = transaction.provider === 'pay2s' ? 'Pay2S' : (transaction.provider || 'Chuột shop');
-    return `<div class="activity-row"><span class="activity-icon ${positive ? '' : 'purchase'}">${icon(positive ? 'download' : 'bag')}</span><span class="activity-copy"><strong>${translateLedgerText(transaction.description || (positive ? 'Nạp tiền vào ví' : 'Mua gói'))}</strong><small>${relativeDate(transaction.createdAt)} · ${provider}</small></span><span class="activity-amount ${positive ? 'positive' : 'negative'}">${positive ? '+' : ''}${formatVnd(transaction.amount)}</span></div>`;
+    const provider = transaction.provider === 'pay2s' ? 'Pay2S' : (transaction.provider || 'Chuá»™t shop');
+    return `<div class="activity-row"><span class="activity-icon ${positive ? '' : 'purchase'}">${icon(positive ? 'download' : 'bag')}</span><span class="activity-copy"><strong>${translateLedgerText(transaction.description || (positive ? 'Náº¡p tiá»n vÃ o vÃ­' : 'Mua gÃ³i'))}</strong><small>${relativeDate(transaction.createdAt)} Â· ${provider}</small></span><span class="activity-amount ${positive ? 'positive' : 'negative'}">${positive ? '+' : ''}${formatVnd(transaction.amount)}</span></div>`;
   }).join('');
 }
 
@@ -198,18 +198,18 @@ function renderDepositHistory() {
   if (!list) return;
   const deposits = state.dashboard.deposits || [];
   if (!state.user) {
-    list.innerHTML = '<div class="empty-state"><strong>Lịch sử nạp tiền là riêng tư.</strong>Hãy đăng nhập để xem các lần nạp Pay2S.</div>';
+    list.innerHTML = '<div class="empty-state"><strong>Lá»‹ch sá»­ náº¡p tiá»n lÃ  riÃªng tÆ°.</strong>HÃ£y Ä‘Äƒng nháº­p Ä‘á»ƒ xem cÃ¡c láº§n náº¡p Pay2S.</div>';
     return;
   }
   if (!deposits.length) {
-    list.innerHTML = '<div class="empty-state"><strong>Chưa có lần nạp nào.</strong>Các lần nạp Pay2S sẽ xuất hiện ở đây sau khi được tạo.</div>';
+    list.innerHTML = '<div class="empty-state"><strong>ChÆ°a cÃ³ láº§n náº¡p nÃ o.</strong>CÃ¡c láº§n náº¡p Pay2S sáº½ xuáº¥t hiá»‡n á»Ÿ Ä‘Ã¢y sau khi Ä‘Æ°á»£c táº¡o.</div>';
     return;
   }
   list.innerHTML = deposits.map((deposit) => {
     const status = String(deposit.status || 'pending').toLowerCase();
-    const statusLabel = status === 'paid' ? 'Đã thanh toán' : status === 'failed' ? 'Thất bại' : 'Đang chờ';
+    const statusLabel = status === 'paid' ? 'ÄÃ£ thanh toÃ¡n' : status === 'failed' ? 'Tháº¥t báº¡i' : 'Äang chá»';
     const statusIcon = status === 'paid' ? 'shield' : status === 'failed' ? 'x' : 'clock';
-    return `<div class="deposit-row"><span class="deposit-icon ${status}">${icon(statusIcon)}</span><span class="deposit-copy"><strong>${formatVnd(deposit.amount)}</strong><small>${deposit.orderId || 'Lần nạp Pay2S'} · ${relativeDate(deposit.paidAt || deposit.createdAt)}</small></span><span class="deposit-status ${status}">${statusLabel}</span></div>`;
+    return `<div class="deposit-row"><span class="deposit-icon ${status}">${icon(statusIcon)}</span><span class="deposit-copy"><strong>${formatVnd(deposit.amount)}</strong><small>${deposit.orderId || 'Láº§n náº¡p Pay2S'} Â· ${relativeDate(deposit.paidAt || deposit.createdAt)}</small></span><span class="deposit-status ${status}">${statusLabel}</span></div>`;
   }).join('');
 }
 
@@ -218,17 +218,17 @@ function renderState() {
   const firstName = user?.name?.split(' ')[0] || '';
   $('#top-balance-value').textContent = formatVnd(state.dashboard.balance);
   if (!['add-funds', 'transactions', 'deposits'].includes(document.body.dataset.page)) {
-    $('#greeting').textContent = user ? `Chào mừng trở lại, ${firstName}.` : 'Ví web của bạn, ở một nơi.';
-    $('#intro-copy').textContent = 'Quản lý số dư để mua những món đồ bạn yêu thích.';
+    $('#greeting').textContent = user ? `ChÃ o má»«ng trá»Ÿ láº¡i, ${firstName}.` : 'VÃ­ web cá»§a báº¡n, á»Ÿ má»™t nÆ¡i.';
+    $('#intro-copy').textContent = 'Quáº£n lÃ½ sá»‘ dÆ° Ä‘á»ƒ mua nhá»¯ng mÃ³n Ä‘á»“ báº¡n yÃªu thÃ­ch.';
   }
-  $('#sidebar-name').textContent = user?.name || 'Chế độ khách';
-  $('#sidebar-email').textContent = user?.email || 'Đăng nhập để kích hoạt';
-  $('#auth-label').textContent = user ? 'Đăng xuất' : 'Tiếp tục với Google';
+  $('#sidebar-name').textContent = user?.name || 'Cháº¿ Ä‘á»™ khÃ¡ch';
+  $('#sidebar-email').textContent = user?.email || 'ÄÄƒng nháº­p Ä‘á»ƒ kÃ­ch hoáº¡t';
+  $('#auth-label').textContent = user ? 'ÄÄƒng xuáº¥t' : 'Tiáº¿p tá»¥c vá»›i Google';
   $('#auth-button').querySelector('[data-icon]').innerHTML = icon(user ? 'logout' : 'google');
   setAvatar($('#top-avatar'), user);
   setAvatar($('#sidebar-avatar'), user);
   const status = $('#connection-status');
-  status.innerHTML = `<span class="status-dot ${user ? '' : 'offline'}"></span>${user ? 'Tài khoản đã kết nối' : 'Chế độ xem thử'}`;
+  status.innerHTML = `<span class="status-dot ${user ? '' : 'offline'}"></span>${user ? 'TÃ i khoáº£n Ä‘Ã£ káº¿t ná»‘i' : 'Cháº¿ Ä‘á»™ xem thá»­'}`;
   renderActivity();
   renderDepositHistory();
   hydrateIcons();
@@ -250,7 +250,7 @@ function closeModal(id) {
 
 function requireAuthAction(action) {
   if (!state.user) {
-    showToast('Hãy đăng nhập bằng Google để kích hoạt ví Chuột shop.', 'error');
+    showToast('HÃ£y Ä‘Äƒng nháº­p báº±ng Google Ä‘á»ƒ kÃ­ch hoáº¡t vÃ­ Chuá»™t shop.', 'error');
     return;
   }
   action();
@@ -266,22 +266,22 @@ function openDeposit(amount = '') {
 
 async function buyProduct(productId) {
   if (!state.user) {
-    showToast('Hãy đăng nhập bằng Google để mua gói.', 'error');
+    showToast('HÃ£y Ä‘Äƒng nháº­p báº±ng Google Ä‘á»ƒ mua gÃ³i.', 'error');
     return;
   }
   const product = state.config.products.find((item) => item.id === productId);
   if (!product) return;
   if (Number(state.dashboard.balance) < Number(product.price)) {
-    showToast('Số dư web chưa đủ cho gói này.', 'error');
+    showToast('Sá»‘ dÆ° web chÆ°a Ä‘á»§ cho gÃ³i nÃ y.', 'error');
     openDeposit(500000);
     return;
   }
-  if (!window.confirm(`Mua ${product.name} với giá ${formatVnd(product.price)}?`)) return;
+  if (!window.confirm(`Mua ${product.name} vá»›i giÃ¡ ${formatVnd(product.price)}?`)) return;
   try {
     const result = await api('/api/checkout', { method: 'POST', body: JSON.stringify({ productId }) });
     state.dashboard.balance = result.balance;
     await refreshDashboard();
-    showToast(`Đã thêm ${product.name} vào bộ sưu tập của bạn.`, 'success');
+    showToast(`ÄÃ£ thÃªm ${product.name} vÃ o bá»™ sÆ°u táº­p cá»§a báº¡n.`, 'success');
   } catch (error) {
     showToast(error.message, 'error');
   }
@@ -291,12 +291,12 @@ async function submitDeposit(event) {
   event.preventDefault();
   const amount = Number($('#deposit-amount').value);
   if (!Number.isInteger(amount) || amount < 1000 || amount > 50000000) {
-    showToast('Chọn số tiền từ ₫1k đến ₫50m.', 'error');
+    showToast('Chá»n sá»‘ tiá»n tá»« â‚«1k Ä‘áº¿n â‚«50m.', 'error');
     return;
   }
   const button = $('#deposit-form button[type="submit"]');
   button.disabled = true;
-  button.innerHTML = '<span>Đang chuẩn bị kết nối thanh toán an toàn…</span>';
+  button.innerHTML = '<span>Äang chuáº©n bá»‹ káº¿t ná»‘i thanh toÃ¡n an toÃ nâ€¦</span>';
   try {
     const result = await api('/api/deposits', { method: 'POST', body: JSON.stringify({ amount }) });
     closeModal('deposit-modal');
@@ -304,16 +304,16 @@ async function submitDeposit(event) {
       window.location.href = result.payUrl;
     } else if (result.qrCode) {
       $('#qr-image').src = result.qrCode;
-      $('#order-ref').textContent = `Đơn hàng ${result.orderId}`;
+      $('#order-ref').textContent = `ÄÆ¡n hÃ ng ${result.orderId}`;
       openModal('qr-modal');
     } else {
-      showToast('Thanh toán đã được chuẩn bị. Hãy làm theo hướng dẫn Pay2S để hoàn tất.', 'success');
+      showToast('Thanh toÃ¡n Ä‘Ã£ Ä‘Æ°á»£c chuáº©n bá»‹. HÃ£y lÃ m theo hÆ°á»›ng dáº«n Pay2S Ä‘á»ƒ hoÃ n táº¥t.', 'success');
     }
   } catch (error) {
     showToast(error.message, 'error');
   } finally {
     button.disabled = false;
-    button.innerHTML = `<span>Tiếp tục đến Pay2S</span>${icon('arrow-up-right')}`;
+    button.innerHTML = `<span>Tiáº¿p tá»¥c Ä‘áº¿n Pay2S</span>${icon('arrow-up-right')}`;
   }
 }
 
@@ -334,12 +334,12 @@ async function logout() {
   state.user = null;
   state.dashboard = { balance: 0, transactions: [], deposits: [], purchases: [], storageConfigured: false };
   renderState();
-    showToast('Bạn đã đăng xuất.');
+    showToast('Báº¡n Ä‘Ã£ Ä‘Äƒng xuáº¥t.');
 }
 
 function signIn() {
   if (!state.config.googleConfigured) {
-    showToast('Hãy thêm GOOGLE_CLIENT_ID và GOOGLE_CLIENT_SECRET vào .env trước.', 'error');
+    showToast('HÃ£y thÃªm GOOGLE_CLIENT_ID vÃ  GOOGLE_CLIENT_SECRET vÃ o .env trÆ°á»›c.', 'error');
     return;
   }
   window.location.href = '/auth/google';
@@ -358,7 +358,7 @@ function bindEvents() {
   on('#deposit-form', 'submit', submitDeposit);
   $$('[data-modal-amount]').forEach((button) => button.addEventListener('click', () => { $('#deposit-amount').value = button.dataset.modalAmount; }));
   on('#view-activity', 'click', () => { window.location.href = '/transactions.html'; });
-  $('.mobile-menu').addEventListener('click', () => showToast('Dùng thanh điều hướng bên dưới để di chuyển trong Chuột shop.'));
+  $('.mobile-menu').addEventListener('click', () => showToast('DÃ¹ng thanh Ä‘iá»u hÆ°á»›ng bÃªn dÆ°á»›i Ä‘á»ƒ di chuyá»ƒn trong Chuá»™t shop.'));
   document.addEventListener('keydown', (event) => { if (event.key === 'Escape') { closeModal('deposit-modal'); closeModal('qr-modal'); } });
 }
 
@@ -376,17 +376,17 @@ async function init() {
   }
   renderState();
   const params = new URLSearchParams(window.location.search);
-  if (params.get('auth') === 'success') showToast('Chào mừng bạn đến với Chuột shop.', 'success');
+  if (params.get('auth') === 'success') showToast('ChÃ o má»«ng báº¡n Ä‘áº¿n vá»›i Chuá»™t shop.', 'success');
   if (params.get('auth_error')) {
     const authError = params.get('auth_error');
     const knownErrors = {
-      google_not_configured: 'Google OAuth chưa được cấu hình.',
-      invalid_state: 'Phiên đăng nhập Google đã hết hạn. Vui lòng thử lại.',
-      access_denied: 'Bạn đã hủy đăng nhập Google.'
+      google_not_configured: 'Google OAuth chÆ°a Ä‘Æ°á»£c cáº¥u hÃ¬nh.',
+      invalid_state: 'PhiÃªn Ä‘Äƒng nháº­p Google Ä‘Ã£ háº¿t háº¡n. Vui lÃ²ng thá»­ láº¡i.',
+      access_denied: 'Báº¡n Ä‘Ã£ há»§y Ä‘Äƒng nháº­p Google.'
     };
-    showToast(knownErrors[authError] || `Đăng nhập Google thất bại: ${authError}`, 'error');
+    showToast(knownErrors[authError] || `ÄÄƒng nháº­p Google tháº¥t báº¡i: ${authError}`, 'error');
   }
-  if (params.get('payment') === 'return') showToast('Đã quay lại từ trang thanh toán. Số dư sẽ cập nhật sau khi Pay2S xác nhận giao dịch.', 'success');
+  if (params.get('payment') === 'return') showToast('ÄÃ£ quay láº¡i tá»« trang thanh toÃ¡n. Sá»‘ dÆ° sáº½ cáº­p nháº­t sau khi Pay2S xÃ¡c nháº­n giao dá»‹ch.', 'success');
   if (params.has('auth') || params.has('auth_error') || params.has('payment')) window.history.replaceState({}, '', window.location.pathname);
 }
 

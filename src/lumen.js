@@ -1,51 +1,51 @@
-const CORE_PRODUCTS = [
+﻿const CORE_PRODUCTS = [
   {
     id: 'focus-pack',
-    name: 'Gói Tập trung',
-    eyebrow: 'NĂNG SUẤT',
-    description: 'Bộ công cụ lập kế hoạch tuần gọn gàng để làm việc bình tĩnh và sắc bén hơn.',
+    name: 'GÃ³i Táº­p trung',
+    eyebrow: 'NÄ‚NG SUáº¤T',
+    description: 'Bá»™ cÃ´ng cá»¥ láº­p káº¿ hoáº¡ch tuáº§n gá»n gÃ ng Ä‘á»ƒ lÃ m viá»‡c bÃ¬nh tÄ©nh vÃ  sáº¯c bÃ©n hÆ¡n.',
     price: 89000,
-    tag: 'Phổ biến',
+    tag: 'Phá»• biáº¿n',
     visual: '01',
     tone: 'warm'
   },
   {
     id: 'signal-pack',
-    name: 'Gói Tín hiệu',
-    eyebrow: 'SÁNG TẠO',
-    description: 'Bộ khởi đầu trực quan giúp ý tưởng của bạn trở nên rõ ràng và thuyết phục.',
+    name: 'GÃ³i TÃ­n hiá»‡u',
+    eyebrow: 'SÃNG Táº O',
+    description: 'Bá»™ khá»Ÿi Ä‘áº§u trá»±c quan giÃºp Ã½ tÆ°á»Ÿng cá»§a báº¡n trá»Ÿ nÃªn rÃµ rÃ ng vÃ  thuyáº¿t phá»¥c.',
     price: 149000,
-    tag: 'Mới',
+    tag: 'Má»›i',
     visual: '02',
     tone: 'blue'
   },
   {
     id: 'studio-pack',
-    name: 'Gói Studio',
-    eyebrow: 'HỆ THỐNG',
-    description: 'Bộ công cụ gọn nhẹ giúp biến ý tưởng thô thành hệ thống hoàn chỉnh.',
+    name: 'GÃ³i Studio',
+    eyebrow: 'Há»† THá»NG',
+    description: 'Bá»™ cÃ´ng cá»¥ gá»n nháº¹ giÃºp biáº¿n Ã½ tÆ°á»Ÿng thÃ´ thÃ nh há»‡ thá»‘ng hoÃ n chá»‰nh.',
     price: 249000,
-    tag: 'Đáng giá nhất',
+    tag: 'ÄÃ¡ng giÃ¡ nháº¥t',
     visual: '03',
     tone: 'green'
   },
   {
     id: 'archive-pack',
-    name: 'Gói Lưu trữ',
-    eyebrow: 'THAM KHẢO',
-    description: 'Thư viện chọn lọc gồm prompt, mẫu quy trình và checklist.',
+    name: 'GÃ³i LÆ°u trá»¯',
+    eyebrow: 'THAM KHáº¢O',
+    description: 'ThÆ° viá»‡n chá»n lá»c gá»“m prompt, máº«u quy trÃ¬nh vÃ  checklist.',
     price: 319000,
-    tag: 'Có giới hạn',
+    tag: 'CÃ³ giá»›i háº¡n',
     visual: '04',
     tone: 'purple'
   }
 ];
 
 const ADDITIONAL_PACK_THEMES = [
-  { slug: 'tap-trung', label: 'Tập trung', eyebrow: 'NĂNG SUẤT', tone: 'warm', tag: 'Phổ biến', description: 'Bộ công cụ giúp sắp xếp công việc và giữ nhịp làm việc rõ ràng.' },
-  { slug: 'tin-hieu', label: 'Tín hiệu', eyebrow: 'SÁNG TẠO', tone: 'blue', tag: 'Mới', description: 'Bộ tài nguyên trực quan giúp phát triển và trình bày ý tưởng.' },
-  { slug: 'studio', label: 'Studio', eyebrow: 'HỆ THỐNG', tone: 'green', tag: 'Đáng giá', description: 'Bộ khung gọn nhẹ để biến ý tưởng thành quy trình có thể dùng ngay.' },
-  { slug: 'luu-tru', label: 'Lưu trữ', eyebrow: 'THAM KHẢO', tone: 'purple', tag: 'Giới hạn', description: 'Thư viện chọn lọc giúp tra cứu nhanh và xây dựng nền tảng lâu dài.' }
+  { slug: 'tap-trung', label: 'Táº­p trung', eyebrow: 'NÄ‚NG SUáº¤T', tone: 'warm', tag: 'Phá»• biáº¿n', description: 'Bá»™ cÃ´ng cá»¥ giÃºp sáº¯p xáº¿p cÃ´ng viá»‡c vÃ  giá»¯ nhá»‹p lÃ m viá»‡c rÃµ rÃ ng.' },
+  { slug: 'tin-hieu', label: 'TÃ­n hiá»‡u', eyebrow: 'SÃNG Táº O', tone: 'blue', tag: 'Má»›i', description: 'Bá»™ tÃ i nguyÃªn trá»±c quan giÃºp phÃ¡t triá»ƒn vÃ  trÃ¬nh bÃ y Ã½ tÆ°á»Ÿng.' },
+  { slug: 'studio', label: 'Studio', eyebrow: 'Há»† THá»NG', tone: 'green', tag: 'ÄÃ¡ng giÃ¡', description: 'Bá»™ khung gá»n nháº¹ Ä‘á»ƒ biáº¿n Ã½ tÆ°á»Ÿng thÃ nh quy trÃ¬nh cÃ³ thá»ƒ dÃ¹ng ngay.' },
+  { slug: 'luu-tru', label: 'LÆ°u trá»¯', eyebrow: 'THAM KHáº¢O', tone: 'purple', tag: 'Giá»›i háº¡n', description: 'ThÆ° viá»‡n chá»n lá»c giÃºp tra cá»©u nhanh vÃ  xÃ¢y dá»±ng ná»n táº£ng lÃ¢u dÃ i.' }
 ];
 
 const ADDITIONAL_PRODUCTS = Array.from({ length: 96 }, (_, index) => {
@@ -54,11 +54,11 @@ const ADDITIONAL_PRODUCTS = Array.from({ length: 96 }, (_, index) => {
   const sequence = index + CORE_PRODUCTS.length + 1;
   return {
     id: `${theme.slug}-${edition}-pack`,
-    name: `Gói ${theme.label} ${String(edition).padStart(2, '0')}`,
+    name: `GÃ³i ${theme.label} ${String(edition).padStart(2, '0')}`,
     eyebrow: theme.eyebrow,
-    description: `${theme.description} Phiên bản ${edition} được thiết kế cho nhu cầu sử dụng linh hoạt.`,
+    description: `${theme.description} PhiÃªn báº£n ${edition} Ä‘Æ°á»£c thiáº¿t káº¿ cho nhu cáº§u sá»­ dá»¥ng linh hoáº¡t.`,
     price: 69000 + (index * 7000),
-    tag: edition % 6 === 0 ? 'Nổi bật' : edition % 3 === 0 ? 'Mới' : theme.tag,
+    tag: edition % 6 === 0 ? 'Ná»•i báº­t' : edition % 3 === 0 ? 'Má»›i' : theme.tag,
     visual: String(sequence).padStart(2, '0'),
     tone: theme.tone
   };
@@ -182,7 +182,7 @@ export function redirect(location, cookies = []) {
 }
 
 export async function readJson(request) {
-  try { return await request.json(); } catch { throw new Error('Dữ liệu JSON không hợp lệ.'); }
+  try { return await request.json(); } catch { throw new Error('Dá»¯ liá»‡u JSON khÃ´ng há»£p lá»‡.'); }
 }
 
 export function appOrigin(request, bindings) {
@@ -203,14 +203,14 @@ function sanityUrl(bindings, kind) {
 }
 
 async function sanityRequest(bindings, kind, options = {}) {
-  if (!sanityConfigured(bindings)) throw new Error('Sanity chưa được cấu hình. Hãy thêm SANITY_PROJECT_ID, SANITY_DATASET và SANITY_API_TOKEN.');
+  if (!sanityConfigured(bindings)) throw new Error('Sanity chÆ°a Ä‘Æ°á»£c cáº¥u hÃ¬nh. HÃ£y thÃªm SANITY_PROJECT_ID, SANITY_DATASET vÃ  SANITY_API_TOKEN.');
   const response = await fetch(sanityUrl(bindings, kind), {
     method: options.method || 'GET',
     headers: { Authorization: `Bearer ${getEnv(bindings, 'SANITY_API_TOKEN')}`, 'Content-Type': 'application/json' },
     body: options.body ? JSON.stringify(options.body) : undefined
   });
   const data = await response.json().catch(() => ({}));
-  if (!response.ok) throw new Error(data.message || `Yêu cầu Sanity thất bại (${response.status})`);
+  if (!response.ok) throw new Error(data.message || `YÃªu cáº§u Sanity tháº¥t báº¡i (${response.status})`);
   return data;
 }
 
@@ -220,7 +220,7 @@ async function sanityQuery(bindings, query, params = {}) {
   for (const [key, value] of Object.entries(params)) url.searchParams.set(`$${key}`, JSON.stringify(value));
   const response = await fetch(url, { headers: { Authorization: `Bearer ${getEnv(bindings, 'SANITY_API_TOKEN')}` } });
   const data = await response.json().catch(() => ({}));
-  if (!response.ok) throw new Error(data.message || `Truy vấn Sanity thất bại (${response.status})`);
+  if (!response.ok) throw new Error(data.message || `Truy váº¥n Sanity tháº¥t báº¡i (${response.status})`);
   return data.result;
 }
 
@@ -275,7 +275,7 @@ function pay2sPaymentUrl(bindings) {
 }
 
 async function createPay2sPayment(bindings, { amount, orderId, request }) {
-  if (!pay2sConfigured(bindings)) throw new Error('Pay2S chưa được cấu hình. Hãy thêm access key, secret key, partner code và tài khoản ngân hàng.');
+  if (!pay2sConfigured(bindings)) throw new Error('Pay2S chÆ°a Ä‘Æ°á»£c cáº¥u hÃ¬nh. HÃ£y thÃªm access key, secret key, partner code vÃ  tÃ i khoáº£n ngÃ¢n hÃ ng.');
   const requestId = randomId('REQ');
   const requestType = getEnv(bindings, 'PAY2S_REQUEST_TYPE', 'pay2s');
   const bankAccounts = parseBankAccounts(bindings);
@@ -286,10 +286,10 @@ async function createPay2sPayment(bindings, { amount, orderId, request }) {
   const amountText = String(amount);
   const rawHash = `accessKey=${pay2sEnv(bindings, 'PAY2S_ACCESS_KEY')}&amount=${amountText}&bankAccounts=Array&ipnUrl=${ipnUrl}&orderId=${orderId}&orderInfo=${orderInfo}&partnerCode=${pay2sEnv(bindings, 'PAY2S_PARTNER_CODE')}&redirectUrl=${redirectUrl}&requestId=${requestId}&requestType=${requestType}`;
   const signature = await hmac(pay2sEnv(bindings, 'PAY2S_SECRET_KEY'), rawHash);
-  const payload = { accessKey: pay2sEnv(bindings, 'PAY2S_ACCESS_KEY'), partnerCode: pay2sEnv(bindings, 'PAY2S_PARTNER_CODE'), partnerName: getEnv(bindings, 'PAY2S_PARTNER_NAME', 'Ví Chuột shop'), requestId, amount, orderId, orderInfo, orderType: requestType, bankAccounts, redirectUrl, ipnUrl, requestType, signature };
+  const payload = { accessKey: pay2sEnv(bindings, 'PAY2S_ACCESS_KEY'), partnerCode: pay2sEnv(bindings, 'PAY2S_PARTNER_CODE'), partnerName: getEnv(bindings, 'PAY2S_PARTNER_NAME', 'VÃ­ Chuá»™t shop'), requestId, amount, orderId, orderInfo, orderType: requestType, bankAccounts, redirectUrl, ipnUrl, requestType, signature };
   const response = await fetch(pay2sPaymentUrl(bindings), { method: 'POST', headers: { 'Content-Type': 'application/json; charset=UTF-8' }, body: JSON.stringify(payload) });
   const data = await response.json().catch(() => ({}));
-  if (!response.ok || (data.resultCode != null && Number(data.resultCode) !== 0)) throw new Error(data.message || `Pay2S từ chối thanh toán (${response.status})`);
+  if (!response.ok || (data.resultCode != null && Number(data.resultCode) !== 0)) throw new Error(data.message || `Pay2S tá»« chá»‘i thanh toÃ¡n (${response.status})`);
   return data;
 }
 
@@ -332,7 +332,7 @@ export async function verifyPay2sIpnSignature(bindings, payload) {
 }
 
 export async function settlePay2sPayload(bindings, payload) {
-  if (!sanityConfigured(bindings)) throw new Error('Cần cấu hình Sanity trước khi cộng tiền vào ví.');
+  if (!sanityConfigured(bindings)) throw new Error('Cáº§n cáº¥u hÃ¬nh Sanity trÆ°á»›c khi cá»™ng tiá»n vÃ o vÃ­.');
   const settled = [];
   for (const transaction of extractTransactionList(payload)) {
     const transferType = String(transaction.transferType || transaction.type || payload.transferType || 'IN').toUpperCase();
@@ -354,7 +354,7 @@ export async function settlePay2sPayload(bindings, payload) {
     await sanityMutate(bindings, [
       { patch: { id: deposit._id, set: { status: 'paid', paidAt, providerData: transaction } } },
       { patch: { id: userDocumentId(deposit.userId), inc: { balance: amount }, set: { updatedAt: paidAt } } },
-      { createIfNotExists: { _id: ledgerId, _type: 'lumenTransaction', userId: deposit.userId, kind: 'deposit', amount, currency: currency(bindings), description: 'Nạp tiền qua Pay2S', orderId, provider: 'pay2s', createdAt: paidAt } }
+      { createIfNotExists: { _id: ledgerId, _type: 'lumenTransaction', userId: deposit.userId, kind: 'deposit', amount, currency: currency(bindings), description: 'Náº¡p tiá»n qua Pay2S', orderId, provider: 'pay2s', createdAt: paidAt } }
     ]);
     settled.push({ orderId, amount });
   }
@@ -362,9 +362,9 @@ export async function settlePay2sPayload(bindings, payload) {
 }
 
 export async function startDeposit(bindings, session, amount, request) {
-  if (!sanityConfigured(bindings)) throw new Error('Sanity chưa được cấu hình. Hãy thêm các biến môi trường Sanity trước.');
-  if (!pay2sConfigured(bindings)) throw new Error('Pay2S chưa được cấu hình. Hãy thêm các biến môi trường Pay2S trước.');
-  if (!Number.isInteger(amount) || amount < 1000 || amount > 50000000) throw new Error('Số tiền phải từ 1.000 đến 50.000.000 VND.');
+  if (!sanityConfigured(bindings)) throw new Error('Sanity chÆ°a Ä‘Æ°á»£c cáº¥u hÃ¬nh. HÃ£y thÃªm cÃ¡c biáº¿n mÃ´i trÆ°á»ng Sanity trÆ°á»›c.');
+  if (!pay2sConfigured(bindings)) throw new Error('Pay2S chÆ°a Ä‘Æ°á»£c cáº¥u hÃ¬nh. HÃ£y thÃªm cÃ¡c biáº¿n mÃ´i trÆ°á»ng Pay2S trÆ°á»›c.');
+  if (!Number.isInteger(amount) || amount < 1000 || amount > 50000000) throw new Error('Sá»‘ tiá»n pháº£i tá»« 1.000 Ä‘áº¿n 50.000.000 VND.');
   await upsertUser(bindings, session);
   const orderId = randomId('DEP');
   const depositId = `lumen-deposit-${orderId}`;
@@ -372,7 +372,7 @@ export async function startDeposit(bindings, session, amount, request) {
   try {
     const payment = await createPay2sPayment(bindings, { amount, orderId, request });
     await sanityMutate(bindings, [{ patch: { id: depositId, set: { providerData: payment } } }]);
-    return { orderId, payUrl: payment.payUrl || payment.paymentUrl || null, qrCode: payment.qrList?.[0]?.qrCode || payment.qrCode || null };
+    console.log('[pay2s] payment response:', JSON.stringify(payment)); return { orderId, payUrl: payment.payUrl || payment.paymentUrl || payment.payUrlWeb || payment.checkoutUrl || payment.url || payment.redirectUrl || null, qrCode: payment.qrList?.[0]?.qrCode || payment.qrCode || payment.qr || null, rawPayment: payment };
   } catch (error) {
     await sanityMutate(bindings, [{ patch: { id: depositId, set: { status: 'failed', failureReason: error.message, updatedAt: now() } } }]).catch(() => {});
     throw error;
@@ -380,12 +380,12 @@ export async function startDeposit(bindings, session, amount, request) {
 }
 
 export async function checkout(bindings, session, productId) {
-  if (!sanityConfigured(bindings)) throw new Error('Sanity chưa được cấu hình. Hãy thêm các biến môi trường Sanity trước.');
+  if (!sanityConfigured(bindings)) throw new Error('Sanity chÆ°a Ä‘Æ°á»£c cáº¥u hÃ¬nh. HÃ£y thÃªm cÃ¡c biáº¿n mÃ´i trÆ°á»ng Sanity trÆ°á»›c.');
   const product = PRODUCTS.find((item) => item.id === productId);
-  if (!product) throw new Error('Không tìm thấy sản phẩm.');
+  if (!product) throw new Error('KhÃ´ng tÃ¬m tháº¥y sáº£n pháº©m.');
   const user = await getUserRecord(bindings, session.googleId);
   if (Number(user.balance || 0) < product.price) {
-    const error = new Error('Số dư web không đủ cho gói này.');
+    const error = new Error('Sá»‘ dÆ° web khÃ´ng Ä‘á»§ cho gÃ³i nÃ y.');
     error.statusCode = 402;
     throw error;
   }
@@ -395,7 +395,7 @@ export async function checkout(bindings, session, productId) {
   await sanityMutate(bindings, [
     { patch: { id: userId, dec: { balance: product.price }, set: { updatedAt: createdAt } } },
     { create: { _id: `lumen-purchase-${purchaseId}`, _type: 'lumenPurchase', userId: session.googleId, productId: product.id, productName: product.name, amount: product.price, currency: currency(bindings), purchaseId, createdAt } },
-    { create: { _id: `lumen-ledger-${purchaseId}`, _type: 'lumenTransaction', userId: session.googleId, kind: 'purchase', amount: -product.price, currency: currency(bindings), description: `Đã mua ${product.name}`, purchaseId, createdAt } }
+    { create: { _id: `lumen-ledger-${purchaseId}`, _type: 'lumenTransaction', userId: session.googleId, kind: 'purchase', amount: -product.price, currency: currency(bindings), description: `ÄÃ£ mua ${product.name}`, purchaseId, createdAt } }
   ]);
   return { purchaseId, product, balance: Number(user.balance) - product.price };
 }
@@ -416,11 +416,11 @@ export async function exchangeGoogleCode(bindings, code, request) {
     body: tokenBody
   });
   const data = await response.json().catch(() => ({}));
-  if (!response.ok || !data.access_token) throw new Error(data.error_description || data.error || `Trao đổi mã Google thất bại (${response.status}).`);
+  if (!response.ok || !data.access_token) throw new Error(data.error_description || data.error || `Trao Ä‘á»•i mÃ£ Google tháº¥t báº¡i (${response.status}).`);
   const userResponse = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', { headers: { Authorization: `Bearer ${data.access_token}` } });
   const user = await userResponse.json().catch(() => ({}));
-  if (!userResponse.ok || !user.sub) throw new Error('Không thể tải hồ sơ người dùng Google.');
-  return { googleId: user.sub, email: user.email || '', emailVerified: Boolean(user.email_verified), name: user.name || user.email || 'Thành viên Chuột shop', picture: user.picture || '' };
+  if (!userResponse.ok || !user.sub) throw new Error('KhÃ´ng thá»ƒ táº£i há»“ sÆ¡ ngÆ°á»i dÃ¹ng Google.');
+  return { googleId: user.sub, email: user.email || '', emailVerified: Boolean(user.email_verified), name: user.name || user.email || 'ThÃ nh viÃªn Chuá»™t shop', picture: user.picture || '' };
 }
 
 export function secureCookies(request) {
