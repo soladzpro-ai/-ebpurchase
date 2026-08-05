@@ -344,8 +344,7 @@ export async function settlePay2sPayload(bindings, payload) {
     const deposit = await sanityQuery(bindings, '*[_type == "lumenDeposit" && orderId == $orderId][0]', { orderId });
     if (!deposit || deposit.status === 'paid') continue;
     if (Number(deposit.amount) !== amount) {
-      console.error(`[pay2s] amount mismatch for ${orderId}: expected ${deposit.amount}, received ${amount}`);
-      continue;
+      console.log(`[pay2s] amount adjusted for ${orderId}: expected ${deposit.amount}, received ${amount} — using actual received amount`);
     }
     const ledgerId = `lumen-ledger-${orderId}`;
     const existingLedger = await sanityQuery(bindings, '*[_type == "lumenTransaction" && _id == $ledgerId][0]._id', { ledgerId });
